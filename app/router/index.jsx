@@ -23,7 +23,7 @@ export default (
     <Router history={hashHistory}>
       <Route path="/">
         <Route path="todos" component={TodoApp} onEnter={requireLogin}/>
-        <IndexRoute component={Login}  onEnter={isLoggedin}/>
+        <IndexRoute component={Login}  onEnter={isLoggedIn}/>
       </Route>
     </Router>
 )
